@@ -1,0 +1,461 @@
+body {
+  background-color: #FAF3EA;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 30px;
+  margin: 0;
+  color: white;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: #ffb47b; /* ここで希望の色を指定します */
+  text-decoration: none; /* 下線を消す場合 */
+}
+
+.threadlink{
+  font-size: 18px;
+}
+
+p.threadInformation{
+  color: #FAF3EA;
+  font-size: 10px;
+  margin-top: 0;
+  padding-top: 5px;
+  padding-left: 1px;
+  height:5px;
+
+}
+
+.bookmark-solid.icon {
+  color: #fca8b2;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 3px;
+  width: 20px;
+  height: 30px;
+  border-radius: 2px 2px 0 0;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.bookmark-solid.icon:before {
+  content: '';
+  position: absolute;
+  top: 21.5px;
+  left: 2.5px;
+  width: 14.5px;
+  height: 14.5px;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  background-color: white;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.rankicon{
+  margin-left: 0;
+  padding-left: 0;
+  padding-bottom: 5px;
+  position: relative;
+  top: -20px; /* 上に20px移動 */
+  left: -31px; /* 左に40px移動 */
+}
+
+
+/* .validation{
+  position: absolute;
+  top: 150px;
+  display: flex;
+  flex-direction: column;
+  order: 1;
+} */
+
+
+@media(max-width:500px){
+  .threadWrapper{
+    width: 90%;
+  }
+  .mainWrapper{
+    width: 90%;
+  }
+  .mainWrapper{
+    width: 90%;
+  }
+  .threadWrapper2{
+    width: 90%;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-left: 15px;
+  }
+  .navi{
+    width: 400px;
+  }
+}
+
+@media(min-width:501px){
+  .threadWrapper{
+    width: 550px;
+  }
+  .threadWrapper2{
+    width: 65%;
+    background-color: #ffffff;
+    padding-left: 10px;
+    padding: 5px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border-radius: 10px;   
+  }
+  .mainWrapper{
+    width: 600px;
+  }
+  .navi{
+    width: 600px;
+  }
+}
+
+
+.navi{
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 0 auto;
+  border-top: 3px double #ff5900;
+  border-bottom: 3px double #ff5900;
+  margin-bottom: -5px;
+  margin-top: 0px;
+  /* position: relative;
+  top: -25px; */
+  text-align: center;
+}
+
+.mainWrapper {
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 0 auto;
+  border: 1px solid silver;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* button.rank button {
+  width: 150px;
+  color: black;
+  text-decoration: none;
+}
+button.new button {
+  width: 150px;
+  color: black;
+  text-decoration: none;
+} */
+
+input.submitButton{
+  background-color: #4CAF50; /* 背景色 */
+  color: white; /* テキスト色 */
+  padding: 12px 24px; /* パディング */
+  border: none; /* ボーダー無し */
+  border-radius: 4px; /* 角丸 */
+  cursor: pointer; /* カーソル変更 */
+  font-size: 16px; /* フォントサイズ */
+}
+
+.threadWrapper {
+  background-color: #ffffff;
+  padding-left: 10px;
+  padding: 5px;
+  margin-left: 10px;
+  border-bottom: 1px dotted silver;
+  margin-bottom: 20px;
+}
+
+.childWrapper {
+  padding-top: 0px;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+.threadTitle {
+  display: flex;
+  align-items: center;
+  height: 30px; 
+  position: relative;
+  top: 10px;
+  margin: 7px;
+}
+
+header{
+  margin: 0px;
+  padding: 0;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  background: 0 0;
+  background-color: #FFCC00;
+  /* width: 100%;
+  height: 100%; */
+}
+
+.threadTitle h1 {
+  /* color: #39A9BF; */
+  color: #fca8b2;
+  margin-left: 3px;
+  font-size: 25px;
+  padding-bottom: 5px;
+}
+.threadPostCount{
+  font-size: 8px;
+  position: relative;
+  top: -13px;
+  margin: 0;
+  padding: 0;
+  padding-left: 22px;
+  color: gray;
+}
+
+.chat.icon {
+  color: gray;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: -13px;
+  width: 12px;
+  height: 7px;
+  border: solid 1px currentColor;
+  border-radius: 2px;
+}
+
+.chat.icon:before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 6px;
+  width: 2.5px;
+  height: 2.5px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: white;
+  border-bottom: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+}
+
+
+
+section {
+  padding: 0 10px;
+}
+
+section .nameArea {
+  display: flex;
+  align-items: center;
+  margin-bottom: -5px;
+  font-size: 10px;
+  padding-left: 0;
+  margin-left: 0;
+  color: gray;
+}
+
+section .username{
+  padding-right: 3px;
+  font-weight: 50;
+}
+
+section .comment_id{
+  font-size: 8px;
+  padding-right: 1px;
+  margin-top: 9px;
+}
+
+section .comment {
+  margin-top: 0;
+  margin-left: 0px;
+  color: #fca8b2;
+}
+
+section time{
+  font-size: 7px;
+  padding-top: 1.5px;
+}
+
+.formWrapper {
+  padding: 16px;
+  margin-left: 0px;
+}
+
+.commentTextArea {
+  margin-top: 10px;
+  width: 100%;
+  height: 90px;
+  resize: none;
+}
+
+.errorMessage {
+  color: red;
+  margin-left: 70px;
+}
+
+/* 新規スレッド */
+.newThreadWrapper {
+  background-color: #FFEEAA;
+  width: 30%;
+  margin: 0 auto;
+  padding-bottom: 0;
+  box-sizing: border-box;
+  width: 100%;
+  /* padding: 0 20px; */
+  margin-bottom: 0;
+}
+
+.newChildThreadWrapper {
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+}
+
+/* .newChildThreadWrapper a {
+  width: 150px;
+  color: black;
+  text-decoration: none;
+} */
+
+#scrollTopButton {
+  display: none; /* 最初は非表示にする */
+  position: fixed;
+  top: 80%;
+  right: 10%;
+  padding: 10px 20px;
+  background-color: #ffcbd1;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-solid.icon {
+  color: #1f0000;
+  position: absolute;
+  margin-left: 0px;
+  margin-top: 7px;
+  width: 14px;
+  height: 2px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.edit-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: -1px;
+  width: 0px;
+  height: 0px;
+  border-left: solid 5px transparent;
+  border-right: solid 5px currentColor;
+  border-top: solid 2px transparent;
+  border-bottom: solid 2px transparent;
+}
+
+/* 人気リンク（画面の左に配置） */
+.rank {
+  float: left; /* 左寄せ */
+  margin-right: auto; /* 右側の余白を自動で調整 */
+  padding-left: 50px;
+}
+
+/* 新着リンク（画面の中央に配置） */
+.new {
+  display: inline-block; /* インラインブロック要素にする */
+  margin: 0 auto; /* 左右の余白を自動で調整 */
+}
+
+/* 一覧リンク（画面の右に配置） */
+.all {
+  float: right; /* 右寄せ */
+  margin-left: auto; /* 左側の余白を自動で調整 */
+  padding-right: 50px;
+}
+
+#sukima{
+  margin-top: 0;
+}
+
+.laberlsubmit{
+  font-family: 'Arial', sans-serif; /* フォント */
+  color: #333; /* 文字色 */
+  font-size: 14px; /* 文字サイズ */
+  background-color: #f2f2f2; /* 背景色 */
+  border: 1px solid #ddd; /* 境界線 */
+  border-radius: 5px; /* 境界線の角の丸み */
+  transition: all 0.3s ease; /* アニメーションの持続時間と種類 */
+}.laberlsubmit:hover {
+  color: #555; /* ホバー時の文字色 */
+  cursor: pointer; /* カーソルスタイル */
+  transform: scale(1.05); /* ホバー時に少し拡大 */
+}
+
+.commentTextArea{
+  font-family: 'Arial', sans-serif; /* フォント */
+  color: #333; /* 文字色 */
+  font-size: 14px; /* 文字サイズ */
+  width: 100%; /* 幅 */
+  height: 150px; /* 高さ */
+  padding: 10px; /* 内側のスペース */
+  box-sizing: border-box; /* パディングを幅と高さに含める */
+  border: 1px solid #ddd; /* 境界線 */
+  background-color: #f8f8f8; /* 背景色 */
+  border-radius: 5px; /* 境界線の角の丸み */
+  resize: vertical; /* 垂直方向のみリサイズを許可 */
+   /* resize: none; ユーザーによるリサイズを禁止 */
+}.commentTextArea:focus {
+  border-color: #a5c3fa; /* フォーカス時の境界線の色 */
+  outline: none; /* アウトラインを非表示 */
+  box-shadow: 0 0 5px #a5c3fa; /* ボックスシャドウ */
+  border-color: #b5b5b5; /* ホバー時の境界線の色 */
+}
+
+.input{
+  margin-top: 5px;
+  font-family: 'Arial', sans-serif; /* フォント */
+  color: #333; /* 文字色 */
+  font-size: 14px; /* 文字サイズ */
+  width: 100%; /* 幅 */
+  height: 30px; /* 高さ */
+  padding: 10px; /* 内側のスペース */
+  box-sizing: border-box; /* パディングを幅と高さに含める */
+  border: 1px solid #ddd; /* 境界線 */
+  background-color: #f8f8f8; /* 背景色 */
+  border-radius: 5px; /* 境界線の角の丸み */
+}.input:focus {
+  border-color: #a5c3fa; /* フォーカス時の境界線の色 */
+  outline: none; /* アウトラインを非表示 */
+  box-shadow: 0 0 5px #a5c3fa; /* ボックスシャドウ */
+  border-color: #b5b5b5; /* ホバー時の境界線の色 */
+}
+
+.check{
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  user-select: none;
+}.check :after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
